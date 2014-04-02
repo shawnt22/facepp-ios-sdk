@@ -32,9 +32,9 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/shawnt22/facepp-ios-sdk.git", :tag => s.version.to_s }
 
 
-  s.source_files  = 'FaceppSDK_ARC/*'
-  # s.source_files  = 'Classes', 'Classes/**/*.{h,m}'
-  # s.exclude_files = 'Classes/Exclude'
+  # s.source_files  = 'FaceppSDK_ARC'
+  s.source_files  = 'FaceppSDK_ARC', 'FaceppSDK_ARC/**/*.{h,m}'
+  s.exclude_files = 'Demos'
 
   s.public_header_files = 'FaceppSDK_ARC/**/*.h'
   # s.public_header_files = 'Classes/**/*.h'
